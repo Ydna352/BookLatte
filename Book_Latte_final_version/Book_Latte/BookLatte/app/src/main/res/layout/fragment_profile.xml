@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/booklatte_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/fotoPerfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/edtUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:textColor="@color/booklatte_text"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Andrea Lector" />
+
+        <EditText
+            android:id="@+id/edtBiografia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:backgroundTint="@color/booklatte_bg"
+            android:fontFamily="@font/baloo_2"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:text="@string/biografia"
+            android:textColor="@color/booklatte_input" />
+
+        <Button
+            android:id="@+id/btnAgregarResenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/booklatte_button_registrate"
+            android:fontFamily="@font/baloo"
+            android:text="@string/agregar_reseña" />
+
+        <TextView
+            android:id="@+id/txtResenias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/misResenias"
+            android:textColor="@color/booklatte_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_resenas_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="16dp"
+            android:nestedScrollingEnabled="false"
+            tools:listitem="@layout/item_resenia" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

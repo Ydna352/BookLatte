@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/booklatte_profile">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Reseña"
+        android:fontFamily="@font/baloo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/booklatte_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Elige un libro:" />
+
+    <Spinner
+        android:id="@+id/spinner_libros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/fondo_spinner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo_2"
+        android:text="Calificación:" />
+
+    <RatingBar
+        android:id="@+id/rating_nueva_resena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:numStars="5"
+        android:stepSize="1.0"/>
+
+    <EditText
+        android:id="@+id/edt_nuevo_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/baloo_2"
+        android:gravity="top"
+        android:hint="¿Qué te pareció el libro?"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/btn_guardar_resena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicar Reseña"
+        android:fontFamily="@font/baloo"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/booklatte_button_registrate"/>
+
+</LinearLayout>

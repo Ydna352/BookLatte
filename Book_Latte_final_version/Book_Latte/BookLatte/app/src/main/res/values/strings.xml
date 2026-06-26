@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Book Latte</string>
+    <string name="bienvenido">¡Bienvenido de vuelta!</string>
+    <string name="email">Email</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="olvidaste">¿Olvidaste tu contraseña?</string>
+    <string name="iniciarSesion">Inicio Sesión</string>
+    <string name="noTenerCuenta">"¿No tienes una cuenta? "</string>
+    <string name="registro">Regístrate</string>
+    <string name="sePartedeBookLatte">¡Sé parte de BookLatte!</string>
+    <string name="nombredeUsuario">Nombre de usuario</string>
+    <string name="crearCuenta">Crear cuenta</string>
+    <string name="bookLatte">BookLatte</string>
+    <string name="citaLibro">" \"Is it better to speak or to die?\" - Call me by your name por André Aciman"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="biografia">Biografía</string>
+    <string name="agregar_reseña">Agregar nueva reseña</string>
+    <string name="misResenias">Mis Reseñas</string>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/booklatte_bg"
+    tools:context=".IniciarSesion">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="183dp"
+        android:layout_height="272dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_tbl" />
+
+    <TextView
+        android:id="@+id/txtBookLatte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/bienvenido"
+        android:textColor="@color/booklatte_white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/txtNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/email"
+        android:textColor="@color/booklatte_white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookLatte" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="258dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:shadowColor="@color/booklatte_muted"
+        android:textColorHint="@color/booklatte_muted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreUsuario" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/contraseña"
+        android:textColor="@color/booklatte_white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="260dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Button
+        android:id="@+id/btnInicioSesion"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/booklatte_accent"
+        android:fontFamily="@font/baloo"
+        android:text="@string/iniciarSesion"
+        android:textColor="@color/booklatte_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <TextView
+        android:id="@+id/txtNoCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/baloo"
+        android:text="@string/noTenerCuenta"
+        android:textColor="@color/booklatte_white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/btnRegistrate"
+        app:layout_constraintTop_toBottomOf="@+id/btnInicioSesion" />
+
+    <Button
+        android:id="@+id/btnRegistrate"
+        android:layout_width="262dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/booklatte_button_registrate"
+        android:fontFamily="@font/baloo"
+        android:text="@string/registro"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNoCuenta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

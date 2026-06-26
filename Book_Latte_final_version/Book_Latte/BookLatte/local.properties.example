@@ -1,0 +1,5 @@
+## This file is a template. Copy it to 'local.properties' and set your actual API keys.
+# The 'local.properties' file MUST NOT be checked into version control.
+
+# Google Maps API Key
+MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY_HERE

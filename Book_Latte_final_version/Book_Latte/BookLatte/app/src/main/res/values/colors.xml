@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="booklatte_bg">#8F9B66</color>         <!-- verde principal -->
+    <color name="booklatte_accent">#F3D9C2</color>     <!-- beige botón -->
+    <color name="booklatte_input">#E6E6E6</color>      <!-- gris claro inputs -->
+    <color name="booklatte_text">#2E2E1F</color>       <!-- texto oscuro -->
+    <color name="booklatte_muted">#A8A8A8</color>      <!-- texto secundario -->
+    <color name="booklatte_white">#FFFFFF</color>
+    <color name="booklatte_button_registrate">#3B4A21</color>
+    <color name="booklatte_crearcuenta">#5F6F52</color>
+    <color name="booklatte_pantalla_carga">#A4A16C</color>
+    <color name="booklatte_profile">#B0C3D9</color>
+</resources>
